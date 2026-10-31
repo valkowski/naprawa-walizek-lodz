@@ -1,32 +1,37 @@
-// Formularz wyceny. Wersja podglądowa: po podpięciu usługi (np. Formspree/Web3Forms)
-// wpisz jej adres w ENDPOINT, a dane będą wysyłane na e-mail właściciela.
-var ENDPOINT = "";
+// Formularz wyceny przez Web3Forms (darmowy plan, wysyła na e-mail właściciela).
+// Klucz dostępu (access key) jest publiczny z założenia — wpisz go poniżej.
+// Dopóki jest pusty, formularz działa w trybie podglądowym.
+var ACCESS_KEY = "";
+var ENDPOINT = "https://api.web3forms.com/submit";
 
 var form = document.getElementById("quote");
 var msg = document.getElementById("form-msg");
 
+function show(text, cls) {
+  msg.textContent = text;
+  msg.className = "form-msg " + cls;
+}
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  msg.className = "form-msg";
   if (!form.checkValidity()) {
-    msg.textContent = "Uzupełnij wymagane pola i zaznacz zgodę.";
-    msg.classList.add("err");
+    show("Uzupełnij wymagane pola i zaznacz zgodę.", "err");
     return;
   }
-  if (!ENDPOINT) {
-    msg.textContent = "Wersja podglądowa: formularz nie wysyła jeszcze danych. Zadzwoń: 600 476 484.";
-    msg.classList.add("err");
+  if (!ACCESS_KEY) {
+    show("Wersja podglądowa: formularz nie wysyła jeszcze danych. Zadzwoń: 600 476 484.", "err");
     return;
   }
-  fetch(ENDPOINT, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-    .then(function (r) {
-      if (!r.ok) throw new Error();
+  var data = new FormData(form);
+  data.append("access_key", ACCESS_KEY);
+  fetch(ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
+    .then(function (r) { return r.json(); })
+    .then(function (j) {
+      if (!j.success) throw new Error();
       form.reset();
-      msg.textContent = "Dziękujemy! Odpowiemy z wstępną wyceną.";
-      msg.classList.add("ok");
+      show("Dziękujemy! Odpowiemy możliwie szybko.", "ok");
     })
     .catch(function () {
-      msg.textContent = "Nie udało się wysłać. Zadzwoń: 600 476 484.";
-      msg.classList.add("err");
+      show("Nie udało się wysłać. Zadzwoń: 600 476 484.", "err");
     });
 });

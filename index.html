@@ -99,7 +99,7 @@
 <section id="wycena" class="section">
   <div class="wrap narrow">
     <h2>Wycena ze zdjęcia</h2>
-    <p>Zrób zdjęcie uszkodzenia, opisz je w kilku słowach i zostaw kontakt. Odpowiemy z wstępną wyceną — ostateczną cenę potwierdzamy po obejrzeniu rzeczy.</p>
+    <p>Opisz uszkodzenie w kilku słowach i zostaw kontakt. Odpowiemy i poprosimy o zdjęcie, a następnie podamy wstępną wycenę — ostateczną cenę potwierdzamy po obejrzeniu rzeczy.</p>
     <form id="quote" class="form" novalidate>
       <label>Co jest uszkodzone?
         <select name="rodzaj" required>
@@ -112,9 +112,9 @@
       <label>Opis uszkodzenia
         <textarea name="opis" rows="3" placeholder="np. urwane kółko i zacinający się zamek" required></textarea>
       </label>
-      <label>Zdjęcie
-        <input type="file" name="zdjecie" accept="image/*" capture="environment">
-      </label>
+      <input type="hidden" name="subject" value="Nowe zapytanie o wycenę ze strony">
+      <input type="hidden" name="from_name" value="Strona naprawa walizek">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <label>Telefon lub e-mail
         <input type="text" name="kontakt" required>
       </label>

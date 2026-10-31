@@ -60,6 +60,7 @@ nav a:hover{color:var(--teal)}
 .form input[type=text],.form select,.form textarea,.form input[type=file]{font:inherit;padding:10px;border:1px solid #c5d1d9;border-radius:8px;background:#fff;width:100%}
 .form .check{display:flex;gap:10px;font-weight:400;align-items:flex-start}
 .form .check input{margin-top:5px}
+.hp{position:absolute;left:-9999px}
 .form-msg{margin:0;font-weight:600}
 .form-msg.ok{color:#2e8b57}.form-msg.err{color:#c0432f}
 
