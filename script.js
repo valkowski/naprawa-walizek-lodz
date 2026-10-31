@@ -158,6 +158,31 @@ $("#diag-cta").addEventListener("click", function () {
   setTimeout(function () { quote.opis.focus(); }, 700);
 });
 
+/* --- ostrzenie: zaznaczanie narzędzi i przeniesienie do formularza --- */
+var chips = $$(".chip"), forgeCta = $("#forge-cta");
+function selectedChips() { return chips.filter(function (c) { return c.getAttribute("aria-pressed") === "true"; }); }
+function updateForgeCta() {
+  var n = selectedChips().length;
+  forgeCta.textContent = n ? "Wyceń wybrane (" + n + ")" : "Przynieś swoje — wyceń";
+}
+chips.forEach(function (c) {
+  c.addEventListener("click", function () {
+    c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") === "true" ? "false" : "true");
+    updateForgeCta();
+  });
+});
+forgeCta.addEventListener("click", function () {
+  var sel = selectedChips();
+  if (sel.length) {
+    var kinds = sel.map(function (c) { return c.dataset.kind; });
+    var same = kinds.every(function (k) { return k === kinds[0]; });
+    quote.rodzaj.value = same ? kinds[0] : "Inne";
+    quote.opis.value = "Ostrzenie: " + sel.map(function (c) { return c.dataset.item; }).join(", ") + ". ";
+  }
+  document.getElementById("wycena").scrollIntoView({ behavior: "smooth" });
+  setTimeout(function () { quote.opis.focus(); }, 700);
+});
+
 /* --- tablica odlotów: efekt przekładania liter --- */
 var CH = "ABCDEFGHIJKLMNOPRSTUWYZĄĆĘŁŃÓŚŹŻ0123456789";
 function scramble(el) {

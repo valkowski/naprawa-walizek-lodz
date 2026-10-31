@@ -155,7 +155,11 @@ h2 em{font-style:normal;color:var(--acc2)}
 .forge-in{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;pointer-events:none}
 .forge-in a,.forge-in .btn{pointer-events:auto}
 .chips{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-wrap:wrap;gap:8px}
-.chips li{border:1px solid rgba(255,179,107,.5);color:var(--acc2);border-radius:30px;padding:4px 14px;font-size:.88rem;background:rgba(0,0,0,.3)}
+.chips-hint{font-family:var(--mono);font-size:.82rem;color:var(--acc2);margin:0 0 10px}
+.chip{pointer-events:auto;cursor:pointer;font:inherit;font-size:.9rem;border:1px solid rgba(255,179,107,.5);color:var(--acc2);border-radius:30px;padding:6px 16px;background:rgba(0,0,0,.35);transition:background .2s,color .2s,transform .2s,box-shadow .2s}
+.chip:hover{background:rgba(224,122,63,.25);transform:translateY(-2px);box-shadow:0 0 18px rgba(224,122,63,.5)}
+.chip[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff;box-shadow:0 0 22px rgba(224,122,63,.6)}
+.chip[aria-pressed=true]:before{content:"✓ "}
 .wheel-wrap{position:relative;display:grid;place-items:center;min-height:320px}
 .wheel{width:min(300px,70vw);aspect-ratio:1;border-radius:50%;position:relative;
   background:repeating-radial-gradient(circle at 50% 50%,#6b7782 0 3px,#59636d 3px 6px),#59636d;

@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=7">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Naprawa walizek, szewc, ostrzenie narzędzi","telephone":"+48600476484","image":"https://valkowski.github.io/naprawa-walizek-lodz/img/og.jpg","address":{"@type":"PostalAddress","streetAddress":"al. Piłsudskiego 35","postalCode":"90-307","addressLocality":"Łódź","addressCountry":"PL"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa walizek i toreb"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ostrzenie noży i narzędzi"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa obuwia i renowacja skór"}}]}
 </script>
@@ -185,10 +185,16 @@
       <p class="eyebrow"><span>04</span> Ostrzenie</p>
       <h2>Iskrownia. <em>Przesuń kursor.</em></h2>
       <p class="sub">Dobrze naostrzone narzędzie tnie gładko, wymaga mniej siły i jest bezpieczniejsze. Poruszaj myszą lub palcem po tej sekcji — iskry lecą za Tobą.</p>
+      <p class="chips-hint">Zaznacz, co chcesz naostrzyć — wpiszemy to do formularza:</p>
       <ul class="chips">
-        <li>noże kuchenne</li><li>sekatory</li><li>nożyce</li><li>nożyczki</li><li>narzędzia ogrodowe</li><li>narzędzia warsztatowe</li>
+        <li><button type="button" class="chip" data-item="noże kuchenne" data-kind="Nóż kuchenny" aria-pressed="false">noże kuchenne</button></li>
+        <li><button type="button" class="chip" data-item="sekatory" data-kind="Sekator / narzędzie ogrodowe" aria-pressed="false">sekatory</button></li>
+        <li><button type="button" class="chip" data-item="nożyce" data-kind="Sekator / narzędzie ogrodowe" aria-pressed="false">nożyce</button></li>
+        <li><button type="button" class="chip" data-item="nożyczki" data-kind="Nożyczki" aria-pressed="false">nożyczki</button></li>
+        <li><button type="button" class="chip" data-item="narzędzia ogrodowe" data-kind="Sekator / narzędzie ogrodowe" aria-pressed="false">narzędzia ogrodowe</button></li>
+        <li><button type="button" class="chip" data-item="narzędzia warsztatowe" data-kind="Inne" aria-pressed="false">narzędzia warsztatowe</button></li>
       </ul>
-      <a class="btn btn-accent" data-magnet href="#wycena">Przynieś swoje — wyceń</a>
+      <button type="button" class="btn btn-accent" id="forge-cta" data-magnet>Przynieś swoje — wyceń</button>
     </div>
     <div class="wheel-wrap" aria-hidden="true">
       <div class="wheel" id="wheel"><i></i></div>
@@ -329,6 +335,6 @@
 </footer>
 
 <a class="sticky-call" href="tel:+48600476484">📞 Zadzwoń 600 476 484</a>
-<script src="script.js?v=6"></script>
+<script src="script.js?v=7"></script>
 </body>
 </html>
