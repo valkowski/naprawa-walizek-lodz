@@ -4,54 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Szewc, naprawa walizek i ostrzenie narzędzi — Łódź, al. Piłsudskiego 35</title>
-<meta name="description" content="Naprawa walizek, toreb i plecaków oraz ostrzenie noży, sekatorów i nożyczek w Łodzi. Wyceń naprawę ze zdjęcia. Tel. 600 476 484.">
-<meta property="og:title" content="Naprawa walizek i ostrzenie narzędzi — Łódź">
-<meta property="og:description" content="Nie wyrzucaj — napraw. Wycena ze zdjęcia, fachowa robota, al. Piłsudskiego 35.">
+<meta name="description" content="Naprawa walizek, toreb i obuwia oraz ostrzenie noży, sekatorów i nożyczek w Łodzi. Wyceń naprawę online. Tel. 600 476 484.">
+<meta property="og:title" content="Naprawa walizek, szewc i ostrzenie — Łódź">
+<meta property="og:description" content="Nie wyrzucaj — napraw. Wycena online, fachowa robota, al. Piłsudskiego 35.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://valkowski.github.io/naprawa-walizek-lodz/img/og.jpg">
 <meta property="og:url" content="https://valkowski.github.io/naprawa-walizek-lodz/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a1420">
 <link rel="icon" href="img/logo.jpg">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="style.css?v=3">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Naprawa walizek, ostrzenie narzędzi","telephone":"+48600476484","address":{"@type":"PostalAddress","streetAddress":"al. Piłsudskiego 35","postalCode":"90-307","addressLocality":"Łódź","addressCountry":"PL"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa walizek i toreb"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ostrzenie noży i narzędzi"}}]}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Naprawa walizek, szewc, ostrzenie narzędzi","telephone":"+48600476484","image":"https://valkowski.github.io/naprawa-walizek-lodz/img/og.jpg","address":{"@type":"PostalAddress","streetAddress":"al. Piłsudskiego 35","postalCode":"90-307","addressLocality":"Łódź","addressCountry":"PL"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa walizek i toreb"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ostrzenie noży i narzędzi"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa obuwia i renowacja skór"}}]}
 </script>
 </head>
 <body>
 
-<div class="preview-bar">Wersja podglądowa (v0.1) — teksty, ceny i zdjęcia zostaną uzupełnione po konsultacji z właścicielem.</div>
+<div class="zip" aria-hidden="true"><div class="zip-fill"></div><div class="zip-pull"></div></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="preview-bar">Wersja podglądowa (v0.2) — ceny, godziny i zdjęcia prac zostaną uzupełnione po konsultacji z właścicielem.</div>
 
 <header class="site-header">
   <div class="wrap bar">
-    <a class="brand" href="#start"><img class="logo" src="img/logo.jpg" alt="" width="40" height="40"><span>Naprawa walizek<small>ostrzenie narzędzi · Łódź</small></span></a>
-    <nav>
+    <a class="brand" href="#start"><img class="logo" src="img/logo.jpg" alt="" width="40" height="40"><span>Naprawa walizek<small>szewc · ostrzenie · Łódź</small></span></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <nav id="nav">
       <a href="#uslugi">Usługi</a>
+      <a href="#diagnoza">Diagnoza</a>
+      <a href="#trasa">Jak to działa</a>
+      <a href="#ostrzenie">Ostrzenie</a>
       <a href="#cennik">Cennik</a>
-      <a href="#wycena">Wycena</a>
-      <a href="#o-nas">O zakładzie</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
-    <a class="btn btn-accent call" href="tel:+48600476484">600 476 484</a>
+    <a class="btn btn-accent call" data-magnet href="tel:+48600476484">600 476 484</a>
   </div>
 </header>
 
 <main>
+<!-- HERO -->
 <section id="start" class="hero">
-  <div class="sparks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="sparks-css" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap hero-in">
     <p class="kicker">Szewc · walizki · ostrzenie · Łódź</p>
-    <h1>Nie wyrzucaj —<br><span class="hl">napraw.</span></h1>
+    <h1><span class="line"><span>Nie wyrzucaj —</span></span><span class="line"><span class="hl">napraw.</span></span></h1>
     <p class="lead">Walizki, torby, obuwie i skóry — oraz noże, sekatory i nożyczki ostre jak nowe. Rzemiosło z doświadczeniem, w centrum Łodzi.</p>
     <div class="cta">
-      <a class="btn btn-accent" href="#wycena">Wyceń naprawę ze zdjęcia</a>
-      <a class="btn btn-ghost" href="tel:+48600476484">Zadzwoń</a>
+      <a class="btn btn-accent" data-magnet href="#diagnoza">Sprawdź, co naprawimy</a>
+      <a class="btn btn-ghost" data-magnet href="#wycena">Wyceń online</a>
     </div>
     <ul class="badges">
-      <li>★ 4,3 w Google (45 opinii)</li>
-      <li>Dwie usługi pod jednym dachem</li>
+      <li><b data-count="4.3" data-dec="1">4,3</b> ★ w Google</li>
+      <li><b data-count="45">45</b> opinii</li>
       <li>Taniej niż nowe</li>
     </ul>
   </div>
+  <a class="scroll-hint" href="#uslugi" aria-label="Przewiń w dół"><span></span></a>
 </section>
 
 <div class="ticker" aria-hidden="true"><div class="track">
@@ -59,22 +70,27 @@
   <span>Kółka</span><span>Zamki</span><span>Suwaki</span><span>Rączki</span><span>Obuwie</span><span>Przeróbki krawieckie</span><span>Renowacja skór</span><span>Noże</span><span>Sekatory</span><span>Nożyczki</span>
 </div></div>
 
+<!-- 01 USŁUGI: metki bagażowe -->
 <section id="uslugi" class="section">
   <div class="wrap">
-    <h2>Czym się zajmujemy</h2>
-    <div class="grid three">
-      <article class="card reveal">
+    <p class="eyebrow reveal"><span>01</span> Usługi</p>
+    <h2 class="reveal">Trzy metki. <em>Jedno miejsce.</em></h2>
+    <p class="sub reveal">Każda usługa ma swoją metkę bagażową — najedź i zobacz, jak się buja.</p>
+    <div class="tags">
+      <article class="tag reveal" data-tilt>
+        <div class="tag-hole"><svg viewBox="0 0 60 70" aria-hidden="true"><path d="M30 0 C30 40 5 40 5 70" fill="none" stroke="#c8956d" stroke-width="3"/></svg></div>
         <img src="img/walizki.jpg" alt="Wymiana kółka w walizce" loading="lazy">
-        <h3>Naprawa walizek i toreb</h3>
+        <h3>Walizki i torby</h3>
         <ul class="ticks">
           <li>wymiana kółek, stelaży i rączek</li>
           <li>naprawa i wymiana zamków oraz suwaków</li>
           <li>zamki szyfrowe, klamry, zatrzaski</li>
           <li>podszewki, przetarcia, szycie maszynowe</li>
-          <li>torebki, plecaki, teczki, paski</li>
         </ul>
+        <a class="tag-link" href="#diagnoza">Kliknij w swoją walizkę →</a>
       </article>
-      <article class="card reveal">
+      <article class="tag reveal" data-tilt>
+        <div class="tag-hole"><svg viewBox="0 0 60 70" aria-hidden="true"><path d="M30 0 C30 40 55 40 55 70" fill="none" stroke="#c8956d" stroke-width="3"/></svg></div>
         <img src="img/ostrzenie.jpg" alt="Ostrzenie sekatora i nożyczek na szlifierce" loading="lazy">
         <h3>Ostrzenie narzędzi</h3>
         <ul class="ticks">
@@ -82,10 +98,11 @@
           <li>sekatory, nożyce, narzędzia ogrodowe</li>
           <li>nożyczki krawieckie i fryzjerskie</li>
           <li>narzędzia warsztatowe</li>
-          <li>dobrze naostrzone = bezpieczniej i wygodniej</li>
         </ul>
+        <a class="tag-link" href="#ostrzenie">Zobacz iskry →</a>
       </article>
-      <article class="card reveal">
+      <article class="tag reveal" data-tilt>
+        <div class="tag-hole"><svg viewBox="0 0 60 70" aria-hidden="true"><path d="M30 0 C30 40 12 40 12 70" fill="none" stroke="#c8956d" stroke-width="3"/></svg></div>
         <img src="img/szewc.jpg" alt="Naprawa obuwia na stole szewskim" loading="lazy">
         <h3>Szewc, krawiec, skóry</h3>
         <ul class="ticks">
@@ -94,106 +111,210 @@
           <li>naprawy kaletnicze</li>
           <li>renowacja skór</li>
         </ul>
+        <a class="tag-link" href="#wycena">Wyceń naprawę →</a>
       </article>
     </div>
   </div>
 </section>
 
-<section id="cennik" class="section alt">
-  <div class="wrap narrow">
-    <h2>Cennik orientacyjny</h2>
-    <p class="muted">Ceny „od" — dokładną kwotę podajemy po obejrzeniu rzeczy lub zdjęcia.</p>
-    <table class="prices">
-      <tr><th>Usługa</th><th>Cena</th></tr>
-      <tr><td>Wymiana kółek w walizce</td><td class="tbd">od … zł</td></tr>
-      <tr><td>Wymiana / naprawa zamka lub suwaka</td><td class="tbd">od … zł</td></tr>
-      <tr><td>Wymiana rączki</td><td class="tbd">od … zł</td></tr>
-      <tr><td>Ostrzenie noża kuchennego</td><td class="tbd">od … zł</td></tr>
-      <tr><td>Ostrzenie sekatora / nożyc</td><td class="tbd">od … zł</td></tr>
-      <tr><td>Ostrzenie nożyczek</td><td class="tbd">od … zł</td></tr>
-    </table>
-    <p class="note">Ceny do uzupełnienia przez właściciela.</p>
+<!-- 02 DIAGNOZA: interaktywna walizka -->
+<section id="diagnoza" class="section dark2">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span>02</span> Diagnoza</p>
+    <h2 class="reveal">Co się stało <em>z Twoją walizką?</em></h2>
+    <p class="sub reveal">Dotknij uszkodzonego miejsca. Pokażemy, co z tym robimy — i przygotujemy zgłoszenie jednym kliknięciem.</p>
+    <div class="diag reveal">
+      <div class="case" id="case">
+        <svg viewBox="0 0 300 400" role="img" aria-label="Schemat walizki z zaznaczonymi miejscami napraw">
+          <defs>
+            <linearGradient id="gbody" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c3f63"/><stop offset="1" stop-color="#0f2236"/></linearGradient>
+          </defs>
+          <rect x="70" y="8" width="160" height="34" rx="14" fill="none" stroke="#c8956d" stroke-width="7"/>
+          <rect x="30" y="40" width="240" height="312" rx="30" fill="url(#gbody)" stroke="#2c5a86" stroke-width="3"/>
+          <g stroke="#1f7a8c" stroke-width="6" stroke-linecap="round" opacity=".75">
+            <line x1="95" y1="70" x2="95" y2="322"/><line x1="135" y1="70" x2="135" y2="322"/>
+            <line x1="165" y1="70" x2="165" y2="322"/><line x1="205" y1="70" x2="205" y2="322"/>
+          </g>
+          <rect x="44" y="54" width="212" height="284" rx="22" fill="none" stroke="#9fb4c7" stroke-width="2" stroke-dasharray="3 5"/>
+          <rect x="228" y="195" width="30" height="46" rx="6" fill="#0a1420" stroke="#c8956d" stroke-width="3"/>
+          <g fill="#c8956d"><circle cx="243" cy="210" r="3"/><circle cx="243" cy="220" r="3"/><circle cx="243" cy="230" r="3"/></g>
+          <rect x="12" y="170" width="20" height="70" rx="8" fill="#c8956d"/>
+          <g fill="#0a1420" stroke="#e07a3f" stroke-width="4"><circle cx="75" cy="374" r="16"/><circle cx="225" cy="374" r="16"/></g>
+          <g stroke="#9fb4c7" stroke-width="3"><line x1="75" y1="352" x2="75" y2="358"/><line x1="225" y1="352" x2="225" y2="358"/></g>
+        </svg>
+      </div>
+      <div class="diag-panel" aria-live="polite">
+        <div class="diag-empty" id="diag-empty">
+          <span class="pulse-dot"></span>
+          <p>Wybierz pulsujący punkt na walizce.</p>
+        </div>
+        <div class="diag-info" id="diag-info" hidden>
+          <p class="diag-eyebrow">Wybrana część</p>
+          <h3 id="diag-title"></h3>
+          <p id="diag-text"></p>
+          <p class="diag-price" id="diag-price"></p>
+          <button class="btn btn-accent" id="diag-cta" data-magnet type="button">Wyceń tę naprawę</button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="wycena" class="section">
-  <div class="wrap narrow">
-    <h2>Wycena ze zdjęcia</h2>
-    <p>Opisz uszkodzenie w kilku słowach i zostaw kontakt. Odpowiemy i poprosimy o zdjęcie, a następnie podamy wstępną wycenę — ostateczną cenę potwierdzamy po obejrzeniu rzeczy.</p>
-    <form id="quote" class="form" novalidate>
-      <label>Co jest uszkodzone?
-        <select name="rodzaj" required>
-          <option value="">— wybierz —</option>
-          <option>Walizka</option><option>Torba / torebka / plecak</option>
-          <option>Nóż kuchenny</option><option>Sekator / narzędzie ogrodowe</option>
-          <option>Nożyczki</option><option>Inne</option>
-        </select>
-      </label>
-      <label>Opis uszkodzenia
-        <textarea name="opis" rows="3" placeholder="np. urwane kółko i zacinający się zamek" required></textarea>
-      </label>
-      <input type="hidden" name="subject" value="Nowe zapytanie o wycenę ze strony">
-      <input type="hidden" name="from_name" value="Strona naprawa walizek">
-      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <label>Telefon lub e-mail
-        <input type="text" name="kontakt" required>
-      </label>
-      <label class="check"><input type="checkbox" name="rodo" required>
-        Zgadzam się na przetwarzanie moich danych (kontakt i zdjęcie) w celu przygotowania wyceny. <a href="#prywatnosc">Szczegóły</a>.
-      </label>
-      <button class="btn btn-accent" type="submit">Poproś o wycenę</button>
-      <p id="form-msg" class="form-msg" role="status"></p>
+<!-- 03 TRASA: proces -->
+<section id="trasa" class="section">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span>03</span> Jak to działa</p>
+    <h2 class="reveal">Trasa Twojej walizki: <em>cztery przystanki.</em></h2>
+    <div class="route" id="route">
+      <div class="route-line"><div class="route-fill"></div><div class="route-bag" aria-hidden="true">🧳</div></div>
+      <ol class="route-steps">
+        <li class="rs"><span class="rs-n">1</span><h3>Zgłoszenie</h3><p>Zadzwoń, wpadnij albo wyślij opis z formularza.</p></li>
+        <li class="rs"><span class="rs-n">2</span><h3>Wycena</h3><p>Podajemy wstępną cenę — ostateczną po obejrzeniu rzeczy.</p></li>
+        <li class="rs"><span class="rs-n">3</span><h3>Naprawa</h3><p>Robimy to solidnie, rzemieślniczo, bez kombinowania.</p></li>
+        <li class="rs"><span class="rs-n">4</span><h3>Odbiór</h3><p>Gotowe do odbioru. Rzecz znów służy latami.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 04 OSTRZENIE: iskrownia -->
+<section id="ostrzenie" class="forge">
+  <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="wrap forge-in">
+    <div class="forge-text">
+      <p class="eyebrow"><span>04</span> Ostrzenie</p>
+      <h2>Iskrownia. <em>Przesuń kursor.</em></h2>
+      <p class="sub">Dobrze naostrzone narzędzie tnie gładko, wymaga mniej siły i jest bezpieczniejsze. Poruszaj myszą lub palcem po tej sekcji — iskry lecą za Tobą.</p>
+      <ul class="chips">
+        <li>noże kuchenne</li><li>sekatory</li><li>nożyce</li><li>nożyczki</li><li>narzędzia ogrodowe</li><li>narzędzia warsztatowe</li>
+      </ul>
+      <a class="btn btn-accent" data-magnet href="#wycena">Przynieś swoje — wyceń</a>
+    </div>
+    <div class="wheel-wrap" aria-hidden="true">
+      <div class="wheel" id="wheel"><i></i></div>
+      <span class="wheel-point" id="wheel-point"></span>
+    </div>
+  </div>
+</section>
+
+<!-- 05 CENNIK: paragon -->
+<section id="cennik" class="section">
+  <div class="wrap cennik">
+    <div class="cennik-text">
+      <p class="eyebrow reveal"><span>05</span> Cennik</p>
+      <h2 class="reveal">Jawne ceny. <em>Bez niespodzianek.</em></h2>
+      <p class="sub reveal">Ceny „od" — dokładną kwotę podajemy po obejrzeniu rzeczy lub zdjęcia. Wydruk paragonu dzieje się na Twoich oczach.</p>
+      <p class="note reveal">Kwoty do uzupełnienia przez właściciela.</p>
+    </div>
+    <div class="receipt" id="receipt">
+      <p class="r-head">NAPRAWA WALIZEK · SZEWC<br>OSTRZENIE · ŁÓDŹ</p>
+      <p class="r-sub">al. Piłsudskiego 35</p>
+      <div class="r-row"><span>Wymiana kółek</span><i></i><b>od … zł</b></div>
+      <div class="r-row"><span>Zamek / suwak</span><i></i><b>od … zł</b></div>
+      <div class="r-row"><span>Wymiana rączki</span><i></i><b>od … zł</b></div>
+      <div class="r-row"><span>Nóż kuchenny</span><i></i><b>od … zł</b></div>
+      <div class="r-row"><span>Sekator / nożyce</span><i></i><b>od … zł</b></div>
+      <div class="r-row"><span>Nożyczki</span><i></i><b>od … zł</b></div>
+      <div class="r-row"><span>Obuwie, skóry, krawiec</span><i></i><b>wg wyceny</b></div>
+      <p class="r-total">Dziękujemy! Nie wyrzucaj — napraw.</p>
+      <div class="barcode" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 WYCENA: karta pokładowa -->
+<section id="wycena" class="section dark2">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span>06</span> Wycena</p>
+    <h2 class="reveal">Twoja karta <em>zgłoszenia.</em></h2>
+    <p class="sub reveal">Opisz uszkodzenie i zostaw kontakt. Odpowiemy, poprosimy o zdjęcie i podamy wstępną wycenę.</p>
+    <form id="quote" class="pass reveal" novalidate>
+      <div class="pass-main">
+        <div class="pass-top"><span>ZGŁOSZENIE NAPRAWY</span><span>✈ ŁÓDŹ</span></div>
+        <input type="hidden" name="subject" value="Nowe zapytanie o wycenę ze strony">
+        <input type="hidden" name="from_name" value="Strona naprawa walizek">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Co jest uszkodzone?
+          <select name="rodzaj" required>
+            <option value="">— wybierz —</option>
+            <option>Walizka</option><option>Torba / torebka / plecak</option>
+            <option>Obuwie</option><option>Skóra / odzież</option>
+            <option>Nóż kuchenny</option><option>Sekator / narzędzie ogrodowe</option>
+            <option>Nożyczki</option><option>Inne</option>
+          </select>
+        </label>
+        <label>Opis uszkodzenia
+          <textarea name="opis" rows="3" placeholder="np. urwane kółko i zacinający się zamek" required></textarea>
+        </label>
+        <label>Telefon lub e-mail
+          <input type="text" name="kontakt" required>
+        </label>
+        <label class="check"><input type="checkbox" name="rodo" required>
+          Zgadzam się na przetwarzanie moich danych (kontakt) w celu przygotowania wyceny. <a href="#prywatnosc">Szczegóły</a>.
+        </label>
+        <button class="btn btn-accent" data-magnet type="submit">Wyślij zgłoszenie</button>
+        <p id="form-msg" class="form-msg" role="status"></p>
+      </div>
+      <div class="pass-stub">
+        <span class="stub-l">NR ZGŁOSZENIA</span>
+        <strong id="ticket-no">WL-0000</strong>
+        <div class="barcode" aria-hidden="true"></div>
+        <span class="stub-l">Tel. 600 476 484</span>
+      </div>
     </form>
   </div>
 </section>
 
-<section class="section alt">
-  <div class="wrap">
-    <h2>Przed i po</h2>
-    <p class="muted">Prawdziwe zdjęcia prac zakładu pojawią się tutaj — wystarczy zdjęcie telefonem przed i po naprawie.</p>
-    <div class="grid four">
-      <div class="ph sq">przed / po 1</div><div class="ph sq">przed / po 2</div>
-      <div class="ph sq">przed / po 3</div><div class="ph sq">przed / po 4</div>
-    </div>
-  </div>
-</section>
-
+<!-- 07 O ZAKŁADZIE -->
 <section id="o-nas" class="section">
-  <div class="wrap narrow">
-    <h2>O zakładzie</h2>
-    <p>Jesteśmy małym zakładem rzemieślniczym w centrum Łodzi. Wierzymy, że dobrą rzecz warto naprawić, zamiast kupować nową — to tańsze i lepsze dla środowiska. Wieloletnie doświadczenie i solidna robota to nasza wizytówka.</p>
-    <div class="shopfront reveal">
-      <figure><img src="img/zaklad-naroznik.webp" alt="Zakład przy al. Piłsudskiego 35 w Łodzi — szyld Szewc, naprawa walizek, ostrzenie" loading="lazy"><figcaption>Znajdziesz nas na rogu, al. Piłsudskiego 35</figcaption></figure>
-      <figure><img src="img/zaklad-wejscie.webp" alt="Wejście do zakładu z listą usług na drzwiach" loading="lazy"><figcaption>Wejście — lista usług na drzwiach</figcaption></figure>
-    </div>
-    <div class="rating">
-      <strong>4,3 ★</strong> w Mapach Google · 45 opinii
-      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Naprawa+walizek+ostrzenie+narz%C4%99dzi+al.+Pi%C5%82sudskiego+35+%C5%81%C3%B3d%C5%BA" target="_blank" rel="noopener">Zobacz opinie / dodaj swoją</a>
+  <div class="wrap">
+    <p class="eyebrow reveal"><span>07</span> O zakładzie</p>
+    <h2 class="reveal">Rzemiosło <em>z adresem.</em></h2>
+    <div class="about">
+      <div class="about-text reveal">
+        <p>Jesteśmy małym zakładem rzemieślniczym w centrum Łodzi. Wierzymy, że dobrą rzecz warto naprawić, zamiast kupować nową — to tańsze i lepsze dla środowiska. Wieloletnie doświadczenie i solidna robota to nasza wizytówka.</p>
+        <div class="stats">
+          <div><b data-count="4.3" data-dec="1">4,3</b><span>ocena w Google</span></div>
+          <div><b data-count="45">45</b><span>opinii klientów</span></div>
+          <div><b data-count="3">3</b><span>zawody pod jednym dachem</span></div>
+        </div>
+        <a class="btn btn-ghost" data-magnet target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Naprawa+walizek+ostrzenie+narz%C4%99dzi+al.+Pi%C5%82sudskiego+35+%C5%81%C3%B3d%C5%BA">Zobacz opinie / dodaj swoją</a>
+      </div>
+      <div class="photos">
+        <figure class="ph1 reveal" data-parallax="0.06"><img src="img/zaklad-naroznik.webp" alt="Zakład przy al. Piłsudskiego 35 w Łodzi — szyld Szewc, naprawa walizek, ostrzenie" loading="lazy"><span class="sticker">✈ al. Piłsudskiego 35</span></figure>
+        <figure class="ph2 reveal" data-parallax="-0.05"><img src="img/zaklad-wejscie.webp" alt="Wejście do zakładu z listą usług na drzwiach" loading="lazy"><span class="sticker alt">Wejdź — czynne!</span></figure>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section alt">
+<!-- 08 FAQ -->
+<section id="faq" class="section dark2">
   <div class="wrap narrow">
-    <h2>Najczęstsze pytania</h2>
-    <details><summary>Czy naprawa walizki się opłaca?</summary><p>Zwykle tak — wymiana kółek, zamka czy rączki kosztuje znacznie mniej niż nowa walizka dobrej jakości.</p></details>
-    <details><summary>Jak długo trwa naprawa?</summary><p>Zależy od zakresu. Prostsze naprawy i ostrzenie często od ręki lub w kilka dni. Dokładny termin podajemy przy wycenie.</p></details>
-    <details><summary>Czy przyjmujecie rzeczy wysyłkowo?</summary><p>Do ustalenia z właścicielem — informacja zostanie uzupełniona.</p></details>
-    <details><summary>Czy wycena ze zdjęcia jest wiążąca?</summary><p>Jest orientacyjna. Cenę ostateczną potwierdzamy po obejrzeniu rzeczy.</p></details>
+    <p class="eyebrow reveal"><span>08</span> Pytania</p>
+    <h2 class="reveal">Najczęstsze <em>pytania.</em></h2>
+    <details class="reveal"><summary>Czy naprawa walizki się opłaca?</summary><p>Zwykle tak — wymiana kółek, zamka czy rączki kosztuje znacznie mniej niż nowa walizka dobrej jakości.</p></details>
+    <details class="reveal"><summary>Jak długo trwa naprawa?</summary><p>Zależy od zakresu. Prostsze naprawy i ostrzenie często od ręki lub w kilka dni. Dokładny termin podajemy przy wycenie.</p></details>
+    <details class="reveal"><summary>Czy przyjmujecie rzeczy wysyłkowo?</summary><p>Do ustalenia z właścicielem — informacja zostanie uzupełniona.</p></details>
+    <details class="reveal"><summary>Czy wycena ze zdjęcia jest wiążąca?</summary><p>Jest orientacyjna. Cenę ostateczną potwierdzamy po obejrzeniu rzeczy.</p></details>
   </div>
 </section>
 
+<!-- 09 KONTAKT: tablica odlotów -->
 <section id="kontakt" class="section">
   <div class="wrap">
-    <h2>Kontakt</h2>
-    <div class="grid two">
-      <div>
-        <p><strong>Naprawa walizek, ostrzenie narzędzi</strong><br>al. Piłsudskiego 35<br>90-307 Łódź</p>
-        <p>Telefon: <a href="tel:+48600476484">600 476 484</a></p>
-        <p>Godziny otwarcia: <span class="tbd">do uzupełnienia</span></p>
-        <a class="btn btn-accent" href="tel:+48600476484">Zadzwoń teraz</a>
+    <p class="eyebrow reveal"><span>09</span> Kontakt</p>
+    <h2 class="reveal">Tablica <em>odlotów.</em></h2>
+    <div class="contact">
+      <div class="board reveal" id="board">
+        <div class="b-row"><span class="b-l">ADRES</span><span class="b-v" data-text="AL. PIŁSUDSKIEGO 35">AL. PIŁSUDSKIEGO 35</span></div>
+        <div class="b-row"><span class="b-l">MIASTO</span><span class="b-v" data-text="90-307 ŁÓDŹ">90-307 ŁÓDŹ</span></div>
+        <div class="b-row"><span class="b-l">TELEFON</span><a class="b-v" href="tel:+48600476484" data-text="600 476 484">600 476 484</a></div>
+        <div class="b-row"><span class="b-l">GODZINY</span><span class="b-v tbd" data-text="WKRÓTCE">WKRÓTCE</span></div>
+        <div class="b-row"><span class="b-l">STATUS</span><span class="b-v ok" data-text="ZAPRASZAMY">ZAPRASZAMY</span></div>
+        <a class="btn btn-accent" data-magnet href="tel:+48600476484">Zadzwoń teraz</a>
       </div>
-      <iframe title="Mapa dojazdu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      <iframe class="reveal" title="Mapa dojazdu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps?q=al.+Pi%C5%82sudskiego+35,+%C5%81%C3%B3d%C5%BA&output=embed"></iframe>
     </div>
   </div>
@@ -202,12 +323,12 @@
 
 <footer class="site-footer" id="prywatnosc">
   <div class="wrap">
-    <p><strong>Naprawa walizek, ostrzenie narzędzi</strong> · al. Piłsudskiego 35, Łódź · 600 476 484</p>
-    <p class="small">Prywatność: dane i zdjęcia z formularza wykorzystujemy wyłącznie do przygotowania wyceny i kontaktu, nie przekazujemy ich osobom trzecim. Pełna polityka prywatności zostanie uzupełniona przed publikacją właściwą.</p>
+    <p><strong>Naprawa walizek, szewc, ostrzenie narzędzi</strong> · al. Piłsudskiego 35, Łódź · 600 476 484</p>
+    <p class="small">Prywatność: dane z formularza wykorzystujemy wyłącznie do przygotowania wyceny i kontaktu, nie przekazujemy ich osobom trzecim. Pełna polityka prywatności zostanie uzupełniona przed publikacją właściwą.</p>
   </div>
 </footer>
 
 <a class="sticky-call" href="tel:+48600476484">📞 Zadzwoń 600 476 484</a>
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
