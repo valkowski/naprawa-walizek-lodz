@@ -27,7 +27,9 @@ img{max-width:100%}
 .brand small{display:block;font-family:"Inter",sans-serif;font-weight:400;font-size:.68rem;color:var(--muted);text-transform:none;letter-spacing:0}
 .logo{width:40px;height:40px;border-radius:50%;object-fit:cover}
 nav{margin-left:auto;display:flex;gap:22px}
-nav a{position:relative;text-decoration:none;color:var(--ink);font-size:.9rem;opacity:.85}
+nav a{position:relative;text-decoration:none;color:var(--ink);font-size:.9rem;opacity:.85;white-space:nowrap}
+.call{white-space:nowrap}
+.brand{white-space:nowrap}
 nav a:after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--acc);transition:width .3s}
 nav a:hover:after,nav a.active:after{width:100%}
 nav a.active{opacity:1}
@@ -242,12 +244,14 @@ details p{margin:0;padding:0 20px 18px;color:var(--muted);animation:fadeUp .4s b
   .rs{padding-top:54px}
   .photos{min-height:480px}
 }
-@media(max-width:760px){
+@media(max-width:1020px){
   .burger{display:block}
-  .call{display:none}
-  nav{position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;background:rgba(10,20,32,.97);padding:10px 22px 20px;transform:translateY(-130%);transition:transform .35s;border-bottom:1px solid var(--line)}
+  nav{position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;background:rgba(10,20,32,.97);padding:10px 22px 20px;transform:translateY(-130%);transition:transform .35s;border-bottom:1px solid var(--line);z-index:-1}
   nav.open{transform:none}
   nav a{padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+}
+@media(max-width:760px){
+  .call{display:none}
   .tags{grid-template-columns:1fr}
   .section{padding:70px 0}
   .hero{padding:80px 0 70px;min-height:0}
