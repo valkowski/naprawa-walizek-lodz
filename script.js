@@ -55,7 +55,11 @@ if ("IntersectionObserver" in window) {
     });
   }, { threshold: 0.12 });
   reveals.forEach(function (el, i) { el.style.transitionDelay = (i % 3) * 90 + "ms"; io.observe(el); });
-  var rc = $("#receipt"); if (rc) io.observe(rc);
+  // paragon ma clip-path, więc obserwujemy jego kontener
+  var rc = $("#receipt");
+  if (rc) new IntersectionObserver(function (es, o) {
+    if (es[0].isIntersecting) { rc.classList.add("in"); o.disconnect(); }
+  }, { threshold: 0.25 }).observe(rc.parentNode);
 } else {
   reveals.forEach(function (el) { el.classList.add("in"); });
   var rc2 = $("#receipt"); if (rc2) rc2.classList.add("in");
