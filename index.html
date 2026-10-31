@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Naprawa walizek, szewc, ostrzenie narzędzi","telephone":"+48600476484","image":"https://valkowski.github.io/naprawa-walizek-lodz/img/og.jpg","address":{"@type":"PostalAddress","streetAddress":"al. Piłsudskiego 35","postalCode":"90-307","addressLocality":"Łódź","addressCountry":"PL"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa walizek i toreb"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ostrzenie noży i narzędzi"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Naprawa obuwia i renowacja skór"}}]}
 </script>
@@ -50,7 +50,7 @@
   <div class="sparks-css" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap hero-in">
     <p class="kicker">Szewc · walizki · ostrzenie · Łódź</p>
-    <h1><span class="line"><span>Nie wyrzucaj —</span></span><span class="line"><span class="hl">napraw.</span></span></h1>
+    <h1><span class="line"><span>Nie wyrzucaj.</span></span><span class="line"><span class="hl">Napraw.</span></span></h1>
     <p class="lead">Walizki, torby, obuwie i skóry — oraz noże, sekatory i nożyczki ostre jak nowe. Rzemiosło z doświadczeniem, w centrum Łodzi.</p>
     <div class="cta">
       <a class="btn btn-accent" data-magnet href="#diagnoza">Sprawdź, co naprawimy</a>
@@ -236,7 +236,7 @@
     <p class="sub reveal">Opisz uszkodzenie i zostaw kontakt. Odpowiemy, poprosimy o zdjęcie i podamy wstępną wycenę.</p>
     <form id="quote" class="pass reveal" novalidate>
       <div class="pass-main">
-        <div class="pass-top"><span>ZGŁOSZENIE NAPRAWY</span><span>✈ ŁÓDŹ</span></div>
+        <div class="pass-top"><span>ZGŁOSZENIE NAPRAWY</span><span>ŁÓDŹ · AL. PIŁSUDSKIEGO 35</span></div>
         <input type="hidden" name="subject" value="Nowe zapytanie o wycenę ze strony">
         <input type="hidden" name="from_name" value="Strona naprawa walizek">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -287,7 +287,7 @@
         <a class="btn btn-ghost" data-magnet target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Naprawa+walizek+ostrzenie+narz%C4%99dzi+al.+Pi%C5%82sudskiego+35+%C5%81%C3%B3d%C5%BA">Zobacz opinie / dodaj swoją</a>
       </div>
       <div class="photos">
-        <figure class="ph1 reveal" data-parallax="0.06"><img src="img/zaklad-naroznik.webp" alt="Zakład przy al. Piłsudskiego 35 w Łodzi — szyld Szewc, naprawa walizek, ostrzenie" loading="lazy"><span class="sticker">✈ al. Piłsudskiego 35</span></figure>
+        <figure class="ph1 reveal" data-parallax="0.06"><img src="img/zaklad-naroznik.webp" alt="Zakład przy al. Piłsudskiego 35 w Łodzi — szyld Szewc, naprawa walizek, ostrzenie" loading="lazy"><span class="sticker">al. Piłsudskiego 35</span></figure>
         <figure class="ph2 reveal" data-parallax="-0.05"><img src="img/zaklad-wejscie.webp" alt="Wejście do zakładu z listą usług na drzwiach" loading="lazy"><span class="sticker alt">Wejdź — czynne!</span></figure>
       </div>
     </div>
@@ -306,19 +306,23 @@
   </div>
 </section>
 
-<!-- 09 KONTAKT: tablica odlotów -->
+<!-- 09 KONTAKT: metka adresowa -->
 <section id="kontakt" class="section">
   <div class="wrap">
     <p class="eyebrow reveal"><span>09</span> Kontakt</p>
-    <h2 class="reveal">Tablica <em>odlotów.</em></h2>
+    <h2 class="reveal">Zepsuło się? <em>Przynieś to do nas.</em></h2>
     <div class="contact">
-      <div class="board reveal" id="board">
-        <div class="b-row"><span class="b-l">ADRES</span><span class="b-v" data-text="AL. PIŁSUDSKIEGO 35">AL. PIŁSUDSKIEGO 35</span></div>
-        <div class="b-row"><span class="b-l">MIASTO</span><span class="b-v" data-text="90-307 ŁÓDŹ">90-307 ŁÓDŹ</span></div>
-        <div class="b-row"><span class="b-l">TELEFON</span><a class="b-v" href="tel:+48600476484" data-text="600 476 484">600 476 484</a></div>
-        <div class="b-row"><span class="b-l">GODZINY</span><span class="b-v tbd" data-text="WKRÓTCE">WKRÓTCE</span></div>
-        <div class="b-row"><span class="b-l">STATUS</span><span class="b-v ok" data-text="ZAPRASZAMY">ZAPRASZAMY</span></div>
-        <a class="btn btn-accent" data-magnet href="tel:+48600476484">Zadzwoń teraz</a>
+      <div class="addr reveal">
+        <span class="addr-hole" aria-hidden="true"></span>
+        <p class="addr-top">Adres warsztatu</p>
+        <p class="addr-name">Naprawa walizek · Szewc · Ostrzenie</p>
+        <p class="addr-line">al. Piłsudskiego 35<br>90-307 Łódź</p>
+        <a class="addr-phone" href="tel:+48600476484">600 476 484</a>
+        <p class="addr-hours">Godziny otwarcia: <span class="tbd">do uzupełnienia</span></p>
+        <div class="addr-btns">
+          <a class="btn btn-accent" data-magnet href="tel:+48600476484">Zadzwoń</a>
+          <a class="btn btn-dark" data-magnet target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=al.+Pi%C5%82sudskiego+35,+%C5%81%C3%B3d%C5%BA">Wyznacz trasę</a>
+        </div>
       </div>
       <iframe class="reveal" title="Mapa dojazdu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps?q=al.+Pi%C5%82sudskiego+35,+%C5%81%C3%B3d%C5%BA&output=embed"></iframe>
@@ -335,6 +339,6 @@
 </footer>
 
 <a class="sticky-call" href="tel:+48600476484">📞 Zadzwoń 600 476 484</a>
-<script src="script.js?v=7"></script>
+<script src="script.js?v=8"></script>
 </body>
 </html>

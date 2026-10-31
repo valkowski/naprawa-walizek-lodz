@@ -198,15 +198,6 @@ function scramble(el) {
     if (n >= txt.length) { el.textContent = txt; clearInterval(iv); }
   }, 45);
 }
-var board = $("#board");
-if (board && "IntersectionObserver" in window) {
-  var bio = new IntersectionObserver(function (es) {
-    es.forEach(function (en) {
-      if (en.isIntersecting) { $$(".b-v", board).forEach(function (v, i) { setTimeout(function () { scramble(v); }, i * 180); }); bio.disconnect(); }
-    });
-  }, { threshold: 0.4 });
-  bio.observe(board);
-}
 
 /* --- iskry (canvas) --- */
 (function () {
