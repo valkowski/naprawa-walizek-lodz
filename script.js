@@ -59,7 +59,7 @@ if ("IntersectionObserver" in window) {
   var rc = $("#receipt");
   if (rc) new IntersectionObserver(function (es, o) {
     if (es[0].isIntersecting) { rc.classList.add("in"); o.disconnect(); }
-  }, { threshold: 0.25 }).observe(rc.parentNode);
+  }, { threshold: 0, rootMargin: "0px 0px -30% 0px" }).observe(rc.parentNode);
 } else {
   reveals.forEach(function (el) { el.classList.add("in"); });
   var rc2 = $("#receipt"); if (rc2) rc2.classList.add("in");
