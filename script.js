@@ -4,6 +4,19 @@
 var ACCESS_KEY = "";
 var ENDPOINT = "https://api.web3forms.com/submit";
 
+// Animacja pojawiania się sekcji przy przewijaniu.
+var reveals = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(function (el) { io.observe(el); });
+} else {
+  reveals.forEach(function (el) { el.classList.add("in"); });
+}
+
 var form = document.getElementById("quote");
 var msg = document.getElementById("form-msg");
 
